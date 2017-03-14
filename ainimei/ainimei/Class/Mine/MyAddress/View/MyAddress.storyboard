@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pD9-y1-rDJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Address View Controller-->
+        <scene sceneID="bKk-vC-YZ5">
+            <objects>
+                <viewController id="pD9-y1-rDJ" customClass="MyAddressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80S-2x-TSa"/>
+                        <viewControllerLayoutGuide type="bottom" id="x0q-96-4iG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A7q-7b-set">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-IS-aOH">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5c-Vy-tbq">
+                                        <color key="backgroundColor" red="1" green="0.58019935344827589" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="➕新增地址">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addAddressAction:" destination="pD9-y1-rDJ" eventType="touchUpInside" id="pCf-qx-WgT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="C5c-Vy-tbq" secondAttribute="trailing" constant="50" id="9mK-0L-nOD"/>
+                                    <constraint firstAttribute="height" constant="50" id="BKT-Yv-c3S"/>
+                                    <constraint firstAttribute="bottom" secondItem="C5c-Vy-tbq" secondAttribute="bottom" constant="10" id="MfF-zu-yPo"/>
+                                    <constraint firstItem="C5c-Vy-tbq" firstAttribute="top" secondItem="z1V-IS-aOH" secondAttribute="top" constant="10" id="YSw-Dg-8Jh"/>
+                                    <constraint firstItem="C5c-Vy-tbq" firstAttribute="leading" secondItem="z1V-IS-aOH" secondAttribute="leading" constant="50" id="h9a-Oj-s9j"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6VR-Gt-r8K">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6VR-Gt-r8K" firstAttribute="top" secondItem="80S-2x-TSa" secondAttribute="bottom" constant="5" id="4ni-9F-SoB"/>
+                            <constraint firstItem="z1V-IS-aOH" firstAttribute="top" secondItem="6VR-Gt-r8K" secondAttribute="bottom" id="9gD-7y-I9u"/>
+                            <constraint firstItem="x0q-96-4iG" firstAttribute="top" secondItem="z1V-IS-aOH" secondAttribute="bottom" id="UT9-G3-9ML"/>
+                            <constraint firstItem="6VR-Gt-r8K" firstAttribute="leading" secondItem="A7q-7b-set" secondAttribute="leading" id="XWN-aA-8HS"/>
+                            <constraint firstItem="z1V-IS-aOH" firstAttribute="leading" secondItem="A7q-7b-set" secondAttribute="leading" id="i5Y-dM-Tqi"/>
+                            <constraint firstAttribute="trailing" secondItem="6VR-Gt-r8K" secondAttribute="trailing" id="pTJ-6s-ef3"/>
+                            <constraint firstAttribute="trailing" secondItem="z1V-IS-aOH" secondAttribute="trailing" id="zGA-oC-V5z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTableView" destination="6VR-Gt-r8K" id="hhS-u2-a4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMQ-gA-AXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="-569"/>
+        </scene>
+    </scenes>
+</document>

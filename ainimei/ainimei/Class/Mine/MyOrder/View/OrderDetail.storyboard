@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ztm-d9-nXF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Order Detail Vc-->
+        <scene sceneID="V9p-Ut-A7d">
+            <objects>
+                <viewController id="ztm-d9-nXF" customClass="ANMOrderDetailVc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rkl-54-4cZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7a-Hc-yZO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDw-ot-shG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-cH-5ha">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bho-jN-qhz">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="ahQ-ti-xwd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="删除订单" backgroundImage="v2_coupon_verify_normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bho-jN-qhz" secondAttribute="trailing" constant="15" id="k43-hp-yax"/>
+                                    <constraint firstAttribute="height" constant="45" id="w8R-E3-B9d"/>
+                                    <constraint firstAttribute="bottom" secondItem="bho-jN-qhz" secondAttribute="bottom" constant="8" id="yev-CH-Q1h"/>
+                                    <constraint firstItem="bho-jN-qhz" firstAttribute="top" secondItem="c0d-cH-5ha" secondAttribute="top" constant="8" id="z4Y-h3-eVj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c0d-cH-5ha" secondAttribute="trailing" id="KUm-qT-uxV"/>
+                            <constraint firstItem="c0d-cH-5ha" firstAttribute="leading" secondItem="IDw-ot-shG" secondAttribute="leading" id="bvo-Zl-I2H"/>
+                            <constraint firstAttribute="bottom" secondItem="c0d-cH-5ha" secondAttribute="bottom" id="kPM-MA-6oZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Ye-3a-CSs">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomView" destination="c0d-cH-5ha" id="1kb-f9-Wxr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeT-X8-7mS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373.5999999999999" y="-394.45277361319341"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="v2_coupon_verify_normal" width="72" height="42"/>
+    </resources>
+</document>

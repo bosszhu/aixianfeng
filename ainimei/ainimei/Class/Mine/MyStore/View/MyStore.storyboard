@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Bb-IP-C32">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Store View Controller-->
+        <scene sceneID="9a4-wR-z4d">
+            <objects>
+                <viewController id="4Bb-IP-C32" customClass="MyStoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0C-5i-KuW"/>
+                        <viewControllerLayoutGuide type="bottom" id="AEX-5c-iLp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ref-xq-qy1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-B8-oXB">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v2_store_empty" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-bI-UCA">
+                                        <frame key="frameInset" minX="60" minY="33" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没有收藏的店铺😯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgT-gq-tc2">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FeI-fW-CAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fgT-gq-tc2" secondAttribute="trailing" id="Pej-TK-YcU"/>
+                                    <constraint firstAttribute="width" constant="200" id="PvI-E3-5zu"/>
+                                    <constraint firstAttribute="bottom" secondItem="fgT-gq-tc2" secondAttribute="bottom" constant="50" id="VS4-nw-Z9X"/>
+                                    <constraint firstItem="fgT-gq-tc2" firstAttribute="leading" secondItem="zDo-B8-oXB" secondAttribute="leading" id="qZe-Mp-xBs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zDo-B8-oXB" firstAttribute="centerX" secondItem="Ref-xq-qy1" secondAttribute="centerX" id="5Fe-IR-Yx1"/>
+                            <constraint firstItem="zDo-B8-oXB" firstAttribute="centerY" secondItem="Ref-xq-qy1" secondAttribute="centerY" id="nqP-ZC-uBl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeH-5Z-8iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="-176.76161919040482"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="v2_store_empty" width="90" height="90"/>
+    </resources>
+</document>

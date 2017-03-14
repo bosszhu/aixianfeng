@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  ainimei
+//
+//  Created by user on 16/11/13.
+//  Copyright © 2016年 kingLee. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "ShareAppKey.h"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kScreenBounds [UIScreen mainScreen].bounds
+
+#define mainColor [UIColor colorWithRed:0.99 green:0.82 blue:0.18 alpha:1.00]
+#define myNavBarColor [UIColor colorWithRed:0.59 green:0.59 blue:0.59 alpha:1.00]
+
+
+#endif /* PrefixHeader_pch */

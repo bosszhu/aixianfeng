@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="vipCell" id="gTV-IL-0wX" customClass="VipCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-b3-IXZ">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH5-xU-iNl">
+                                <frame key="frameInset" minX="3" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3a-aD-ISn">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="wws-e3-lon"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1S7-b3-IXZ" secondAttribute="trailing" id="1oa-kK-Kg5"/>
+                <constraint firstItem="k3a-aD-ISn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ea8-5s-T1d"/>
+                <constraint firstItem="k3a-aD-ISn" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HFs-62-76o"/>
+                <constraint firstItem="1S7-b3-IXZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="HbC-Dp-Luy"/>
+                <constraint firstAttribute="bottom" secondItem="1S7-b3-IXZ" secondAttribute="bottom" constant="4" id="JMQ-Rl-MCE"/>
+                <constraint firstItem="1S7-b3-IXZ" firstAttribute="leading" secondItem="k3a-aD-ISn" secondAttribute="trailing" id="KCv-SL-xag"/>
+                <constraint firstItem="1S7-b3-IXZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="152" id="dfv-GJ-73R"/>
+                <constraint firstItem="1S7-b3-IXZ" firstAttribute="leading" secondItem="k3a-aD-ISn" secondAttribute="trailing" id="p9C-Gh-cxx"/>
+            </constraints>
+            <size key="customSize" width="192" height="28"/>
+            <connections>
+                <outlet property="BigView" destination="1S7-b3-IXZ" id="WZ3-ff-fyR"/>
+                <outlet property="cellLable" destination="nH5-xU-iNl" id="fgz-E2-L4a"/>
+                <outlet property="smallView" destination="k3a-aD-ISn" id="gWu-G5-B7G"/>
+            </connections>
+            <point key="canvasLocation" x="-173" y="33"/>
+        </collectionViewCell>
+    </objects>
+</document>
